@@ -10,8 +10,8 @@ Quickstart
 
 Run the following commands to bootstrap your environment ::
 
-    git clone https://github.com/edward01/my_flask
-    cd my_flask
+    git clone https://github.com/edward01/flask_cookiecutter
+    cd flask_cookiecutter
     pip install -r requirements/dev.txt
     cp .env.example .env
     npm install

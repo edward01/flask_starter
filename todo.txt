@@ -7,8 +7,8 @@ $ flask run
 
 Features:
 ---------
-/ Landing Page (public)
-* Login
+- Landing Page (public)
+- Login
 - Register
 - Blog Crud
 - Blog View
@@ -26,11 +26,11 @@ Extra Features:
 
 / bootstrap template
 / database (postgre)
+/ authentication
+/ login
 
-* authentication
-* login
-- csrf
-- forms
+* csrf
+* forms
 
 - pytest
 - deployment to heroku
@@ -48,8 +48,6 @@ Applied Features:
     * https://flask-debugtoolbar.readthedocs.io/en/latest/
 * Environs
     * https://github.com/sloria/environs
-
-
 * Flask Migrate
     * https://flask-migrate.readthedocs.io/en/latest/
 * Flask SQLAlchemy
@@ -62,6 +60,8 @@ Applied Features:
 
 * Flask WTF (CSRF)
     * https://flask-wtf.readthedocs.io/en/stable/
+
+
 * Flask webpack
     * https://github.com/nickjj/flask-webpack
 * Flask Caching

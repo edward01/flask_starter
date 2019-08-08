@@ -73,8 +73,5 @@ def register():
 @blueprint.route("/about/")
 def about():
     """About page."""
-    from pprint import pprint
-    print('=== request.endpoint ===')
-    pprint(request.endpoint)
     form = LoginForm(request.form)
     return render_template("public/about.html", form=form)

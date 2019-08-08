@@ -5,7 +5,7 @@ import sys
 
 from flask import Flask, render_template
 
-from myflask import commands, public, user
+from myflask import commands, public, user, posts
 from myflask.extensions import (
     bcrypt,
     cache,
@@ -39,10 +39,10 @@ def register_extensions(app):
     bcrypt.init_app(app)
     cache.init_app(app)
     db.init_app(app)
+    migrate.init_app(app, db)
     csrf_protect.init_app(app)
     login_manager.init_app(app)
     debug_toolbar.init_app(app)
-    migrate.init_app(app, db)
     webpack.init_app(app)
     return None
 
@@ -51,6 +51,7 @@ def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(public.views.blueprint)
     app.register_blueprint(user.views.blueprint)
+    app.register_blueprint(posts.views.blueprint)
     return None
 
 
@@ -73,7 +74,11 @@ def register_shellcontext(app):
 
     def shell_context():
         """Shell context objects."""
-        return {"db": db, "User": user.models.User}
+        return {
+            "db": db,
+            "User": user.models.User,
+            "Post": posts.models.Post,
+        }
 
     app.shell_context_processor(shell_context)
 

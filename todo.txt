@@ -22,6 +22,10 @@ Extra Features:
 - Heroku deployment
 - Docker deployment
 =======================================================================
+
+To clarify:
+-------------
+1. how to add js/css assets
 =======================================================================
 
 / bootstrap template

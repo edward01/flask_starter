@@ -1,5 +1,5 @@
 {
-  "name": "my_flask",
+  "name": "myflask",
   "version": "1.0.0",
   "description": "A flasky app.",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edward01/my_flask.git"
+    "url": "git+https://github.com/edward01/myflask.git"
   },
   "author": "Edward Jose",
   "license": "MIT",
@@ -19,9 +19,9 @@
     "node": ">=12"
   },
   "bugs": {
-    "url": "https://github.com/edward01/my_flask/issues"
+    "url": "https://github.com/edward01/myflask/issues"
   },
-  "homepage": "https://github.com/edward01/my_flask#readme",
+  "homepage": "https://github.com/edward01/myflask#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "bootstrap": "^4.3.1",

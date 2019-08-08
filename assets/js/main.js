@@ -1,5 +1,5 @@
 /*
- * Main Javascript file for my_flask.
+ * Main Javascript file for myflask.
  *
  * This file bundles all of your javascript together using webpack.
  */

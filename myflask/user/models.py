@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*-
+    # -*- coding: utf-8 -*-
 """User models."""
 import datetime as dt
 
 from flask_login import UserMixin
 
-from my_flask.database import (
+from myflask.database import (
     Column,
     Model,
     SurrogatePK,
@@ -12,7 +12,7 @@ from my_flask.database import (
     reference_col,
     relationship,
 )
-from my_flask.extensions import bcrypt
+from myflask.extensions import bcrypt
 
 
 class Role(SurrogatePK, Model):

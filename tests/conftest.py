@@ -4,8 +4,8 @@
 import pytest
 from webtest import TestApp
 
-from my_flask.app import create_app
-from my_flask.database import db as _db
+from myflask.app import create_app
+from myflask.database import db as _db
 
 from .factories import UserFactory
 

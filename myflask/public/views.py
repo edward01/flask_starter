@@ -11,11 +11,11 @@ from flask import (
 )
 from flask_login import login_required, login_user, logout_user
 
-from my_flask.extensions import login_manager
-from my_flask.public.forms import LoginForm
-from my_flask.user.forms import RegisterForm
-from my_flask.user.models import User
-from my_flask.utils import flash_errors
+from myflask.extensions import login_manager
+from myflask.public.forms import LoginForm
+from myflask.user.forms import RegisterForm
+from myflask.user.models import User
+from myflask.utils import flash_errors
 
 blueprint = Blueprint("public", __name__, static_folder="../static")
 
@@ -73,5 +73,8 @@ def register():
 @blueprint.route("/about/")
 def about():
     """About page."""
+    from pprint import pprint
+    print('=== request.endpoint ===')
+    pprint(request.endpoint)
     form = LoginForm(request.form)
     return render_template("public/about.html", form=form)

@@ -1,0 +1,75 @@
+Project: A blog application
+
+To start:
+----------
+$ export FLASK_APP=wsgi.py && export FLASK_ENV=development
+$ flask run
+
+Features:
+---------
+/ Landing Page (public)
+* Login
+- Register
+- Blog Crud
+- Blog View
+    - as guest
+    - as owner
+
+Extra Features:
+---------------
+- User generation via script
+- Can be accessed via api
+- Heroku deployment
+- Docker deployment
+=======================================================================
+=======================================================================
+
+/ bootstrap template
+/ database (postgre)
+
+* authentication
+* login
+- csrf
+- forms
+
+- pytest
+- deployment to heroku
+- docker deployment
+- api / jwt
+
+- Create Utility scripts
+- how to Caching
+- how to use webpack
+---------------------------------------------------------------
+
+Applied Features:
+-----------------
+* Flask Debugtoolbar
+    * https://flask-debugtoolbar.readthedocs.io/en/latest/
+* Environs
+    * https://github.com/sloria/environs
+
+
+* Flask Migrate
+    * https://flask-migrate.readthedocs.io/en/latest/
+* Flask SQLAlchemy
+    * https://flask-sqlalchemy.palletsprojects.com/en/2.x/
+* Flask Bcrypt
+    * https://flask-bcrypt.readthedocs.io/en/latest/
+* Flask Login
+    * https://flask-login.readthedocs.io/en/latest/
+
+
+* Flask WTF (CSRF)
+    * https://flask-wtf.readthedocs.io/en/stable/
+* Flask webpack
+    * https://github.com/nickjj/flask-webpack
+* Flask Caching
+    * https://pythonhosted.org/Flask-Caching/
+* Click (for management scripting)
+    * https://palletsprojects.com/p/click/
+* Pytest
+    * https://pytest.org/en/latest/
+* -- Future Roadmap --
+* Docker
+    * google.com

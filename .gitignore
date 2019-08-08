@@ -51,8 +51,8 @@ venv/
 /node_modules/
 
 # webpack-built files
-/my_flask/static/build/
-/my_flask/webpack/manifest.json
+/myflask/static/build/
+/myflask/webpack/manifest.json
 
 # Configuration
 .env

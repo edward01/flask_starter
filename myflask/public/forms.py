@@ -4,7 +4,7 @@ from flask_wtf import FlaskForm
 from wtforms import PasswordField, StringField
 from wtforms.validators import DataRequired
 
-from my_flask.user.models import User
+from myflask.user.models import User
 
 
 class LoginForm(FlaskForm):

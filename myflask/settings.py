@@ -22,4 +22,4 @@ CACHE_TYPE = "simple"  # Can be "memcached", "redis", etc.
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 WEBPACK_MANIFEST_PATH = "webpack/manifest.json"
 
-APP_TITLE = 'My Site'
+APP_TITLE = 'My Blog App'
